@@ -3,9 +3,9 @@
 // import viteLogo from "/vite.svg";
 import "./App.css";
 import Card from "./components/Card";
-import COVER from "./assets/background1.png";
+import COVER from "./assets/background1.webp";
 // import TITLE from "./assets/dark_rider-title.png";
-import CHARACTER from "./assets/background1.png";
+import CHARACTER from "./assets/background1.webp";
 
 function App() {
   // const [count, setCount] = useState(0);
