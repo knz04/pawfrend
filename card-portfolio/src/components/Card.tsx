@@ -4,9 +4,10 @@ import "../styles/Card.css";
 interface CardProps {
   cover: string;
   character: string;
+  decor: string;
 }
 
-const Card: React.FC<CardProps> = ({ cover, character }) => {
+const Card: React.FC<CardProps> = ({ cover, character, decor }) => {
   const [isActive, setIsActive] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -39,6 +40,7 @@ const Card: React.FC<CardProps> = ({ cover, character }) => {
             <img src={cover} className="cover-image" />
           </div>
           <img src={character} className="character" />
+          <img src={decor} className="decor" />
         </div>
       </a>
     </div>

@@ -1,11 +1,11 @@
 :root {
-  --card-height: 300px;
+  --card-height: 500px;
   --card-width: calc(var(--card-height) / 1.5);
 }
-
-* {
-  /* box-sizing: border-box; */
-}
+/* 
+ * { 
+  box-sizing: border-box;
+} */
 
 body {
   width: 100%;
@@ -89,12 +89,15 @@ body {
 .card:hover .wrapper::after {
   height: 120px;
 }
-.title {
+.decor {
+  opacity: 0;
   width: 100%;
   transition: transform 0.5s;
 }
-.card:hover .title {
-  transform: translate3d(0%, -50px, 100px);
+.card:hover .decor {
+  opacity: 1;
+  transform: translate3d(0%, -50px, 500px);
+  transition: all 0.5s;
 }
 .character {
   width: 100%;
@@ -105,7 +108,7 @@ body {
 }
 .card:hover .character {
   opacity: 1;
-  transform: translate3d(0%, -30%, 100px);
+  transform: translate3d(0%, -5%, 100px);
 }
 
 .card.active .wrapper {
@@ -120,10 +123,11 @@ body {
 .card.active .wrapper::after {
   height: 120px;
 }
-.card.active .title {
-  transform: translate3d(0%, -50px, 100px);
+.card.active .decor {
+  opacity: 1;
+  transform: translate3d(0%, -60px, 800px);
 }
 .card.active .character {
   opacity: 1;
-  transform: translate3d(0%, -30%, 100px);
+  transform: translate3d(0%, -5%, 100px);
 }
